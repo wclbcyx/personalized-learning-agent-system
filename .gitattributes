@@ -1,0 +1,9 @@
+frontend/dist/** linguist-generated
+frontend/node_modules/** linguist-vendored
+backend/memory/traces/** linguist-generated
+backend/data/logs/** linguist-generated
+backend/.venv/** linguist-vendored
+venv/** linguist-vendored
+**/__pycache__/** linguist-generated
+*.pyc linguist-generated
+docs/learning_agent_logic_handdrawn.html linguist-generated
