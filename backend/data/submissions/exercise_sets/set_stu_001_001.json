@@ -1,0 +1,100 @@
+{
+  "exercise_set_id": "set_stu_001_001",
+  "student_id": "stu_001",
+  "exercises": [
+    {
+      "exercise_id": "exercise_001",
+      "exercise_type": "calculation",
+      "difficulty": "medium",
+      "knowledge_points": [
+        "不等式"
+      ],
+      "question": "解不等式：-3x > 12",
+      "options": [],
+      "reference_answer": "x < -4",
+      "hint": "两边同时除以 -3 时，记得改变不等号的方向。",
+      "rubric": [
+        "步骤正确：识别出需要两边除以负数",
+        "规则应用：除以负数时正确改变不等号方向",
+        "结果准确：计算无误"
+      ],
+      "source_ids": [
+        "doc001_chunk0003"
+      ],
+      "created_at": "2026-06-01T10:10:33",
+      "metadata": {
+        "generated_by": "ExerciseAgent",
+        "model": "qwen3.5-plus"
+      }
+    },
+    {
+      "exercise_id": "exercise_002",
+      "exercise_type": "calculation",
+      "difficulty": "medium",
+      "knowledge_points": [
+        "不等式",
+        "一元一次方程"
+      ],
+      "question": "解不等式：5 - 2x < 1",
+      "options": [],
+      "reference_answer": "x > 2",
+      "hint": "先移项，再系数化为 1，注意最后一步除以负数要变号。",
+      "rubric": [
+        "移项正确：得到 -2x < -4",
+        "规则应用：两边除以 -2 时改变不等号方向",
+        "结果准确：最终解集正确"
+      ],
+      "source_ids": [
+        "doc001_chunk0003"
+      ],
+      "created_at": "2026-06-01T10:10:33",
+      "metadata": {
+        "generated_by": "ExerciseAgent",
+        "model": "qwen3.5-plus"
+      }
+    },
+    {
+      "exercise_id": "exercise_003",
+      "exercise_type": "calculation",
+      "difficulty": "medium",
+      "knowledge_points": [
+        "不等式",
+        "同类项"
+      ],
+      "question": "解不等式：4x - 7 > 5x + 3",
+      "options": [],
+      "reference_answer": "x < -10",
+      "hint": "将含 x 的项移到一边，常数项移到另一边，注意合并后 x 的系数为负。",
+      "rubric": [
+        "移项合并：正确得到 -x > 10",
+        "规则应用：系数化为 1 时正确改变不等号方向",
+        "结果准确：最终结果正确"
+      ],
+      "source_ids": [
+        "doc001_chunk0003",
+        "doc001_chunk0001"
+      ],
+      "created_at": "2026-06-01T10:10:33",
+      "metadata": {
+        "generated_by": "ExerciseAgent",
+        "model": "qwen3.5-plus"
+      }
+    }
+  ],
+  "summary": "本组练习围绕本次学习主题，共 3 题。",
+  "debug": {
+    "mode": "llm",
+    "model": "qwen3.5-plus",
+    "source_count": 5,
+    "has_memory_context": true,
+    "raw_exercise_count": 3,
+    "student_id": "stu_001",
+    "course_name": "初中数学",
+    "topic": "不等式",
+    "question": "为什么解不等式时，两边除以负数要改变不等号方向？",
+    "search_query": "初中数学 不等式 为什么解不等式时，两边除以负数要改变不等号方向？",
+    "retrieved_source_count": 5,
+    "memory_count": 5,
+    "elapsed_ms": 68593.13
+  }
+}

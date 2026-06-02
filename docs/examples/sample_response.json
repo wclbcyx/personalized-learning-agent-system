@@ -1,0 +1,30 @@
+{
+  "session_id": "session_20260531_001",
+  "summary": "建议先学习工具调用，再学习 RAG。",
+  "today_plan": [
+    "理解工具调用基本流程",
+    "运行一个工具调用示例",
+    "学习 RAG 的检索和生成流程",
+    "完成 5 道检测题"
+  ],
+  "exercise": {
+    "type": "short_answer",
+    "question": "请解释 Agent 工具调用和 RAG 的关系。",
+    "rubric": [
+      "说明工具调用由 Agent 决策触发",
+      "说明 RAG 包含检索和生成",
+      "说明知识检索可封装为工具"
+    ]
+  },
+  "sources": [
+    "HelloAgents 工具调用章节",
+    "HelloAgents RAG 章节"
+  ],
+  "memory_update": {
+    "weak_points": [
+      "工具参数设计",
+      "RAG 上下文构建"
+    ],
+    "next_recommendation": "练习实现 KnowledgeRetrievalTool"
+  }
+}

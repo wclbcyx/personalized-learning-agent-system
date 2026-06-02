@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>个性化学习多智能体系统逻辑结构图</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 1800px;
+      height: 1250px;
+      overflow: hidden;
+      background: #f7f2e8;
+      font-family: "Comic Sans MS", "Marker Felt", "STKaiti", "Kaiti SC", "Hiragino Sans GB", sans-serif;
+    }
+
+    svg {
+      width: 1800px;
+      height: 1250px;
+      display: block;
+      background:
+        radial-gradient(circle at 14% 12%, rgba(77, 168, 218, 0.10), transparent 260px),
+        radial-gradient(circle at 82% 18%, rgba(240, 142, 93, 0.12), transparent 280px),
+        radial-gradient(circle at 70% 88%, rgba(91, 184, 143, 0.12), transparent 300px),
+        #f7f2e8;
+    }
+
+    .title {
+      font-size: 44px;
+      font-weight: 700;
+      fill: #263238;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      fill: #5b6268;
+    }
+
+    .label {
+      font-size: 24px;
+      font-weight: 700;
+      fill: #25313a;
+    }
+
+    .small {
+      font-size: 18px;
+      fill: #44515b;
+    }
+
+    .tiny {
+      font-size: 16px;
+      fill: #4b5963;
+    }
+
+    .node {
+      stroke: #263238;
+      stroke-width: 3.2;
+      filter: url(#softShadow);
+    }
+
+    .sketch {
+      fill: none;
+      stroke: #263238;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: url(#roughen);
+    }
+
+    .arrow {
+      fill: none;
+      stroke: #263238;
+      stroke-width: 3.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      marker-end: url(#arrowHead);
+      filter: url(#roughen);
+    }
+
+    .dash {
+      stroke-dasharray: 10 9;
+    }
+
+    .badge {
+      font-size: 15px;
+      font-weight: 700;
+      fill: #ffffff;
+    }
+  </style>
+</head>
+<body>
+<svg viewBox="0 0 1800 1250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="个性化学习多智能体系统逻辑结构图">
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="6" stdDeviation="3" flood-color="#1c2b33" flood-opacity="0.18"/>
+    </filter>
+    <filter id="roughen">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="8" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.7"/>
+    </filter>
+    <marker id="arrowHead" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#263238"/>
+    </marker>
+  </defs>
+
+  <rect x="26" y="24" width="1748" height="1198" rx="34" fill="rgba(255,255,255,0.38)" stroke="#263238" stroke-width="3" filter="url(#roughen)"/>
+  <path d="M54 100 Q430 72 808 95 T1734 88" class="sketch" opacity="0.18"/>
+  <path d="M70 1120 Q520 1172 940 1130 T1718 1156" class="sketch" opacity="0.16"/>
+
+  <text x="90" y="83" class="title">基于 HelloAgents 的个性化学习陪伴与课程项目辅导多智能体系统</text>
+  <text x="94" y="123" class="subtitle">从学习目标输入，到 RAG 检索、多 Agent 协作、练习批改、长期记忆更新，再到个性化输出</text>
+
+  <g transform="translate(72,190)">
+    <rect class="node" x="0" y="0" width="250" height="180" rx="26" fill="#fff6cf"/>
+    <path class="sketch" d="M22 42 C58 26, 100 26, 132 43 S204 60, 226 42" opacity="0.23"/>
+    <text x="28" y="48" class="label">用户输入</text>
+    <text x="28" y="86" class="small">学习目标</text>
+    <text x="28" y="116" class="small">当前基础</text>
+    <text x="28" y="146" class="small">课程资料 / 问题</text>
+  </g>
+
+  <g transform="translate(385,220)">
+    <rect class="node" x="0" y="0" width="235" height="120" rx="24" fill="#e9f4ff"/>
+    <text x="30" y="50" class="label">FastAPI 接口</text>
+    <text x="30" y="84" class="small">校验请求 · 创建会话</text>
+  </g>
+
+  <g transform="translate(720,185)">
+    <rect class="node" x="0" y="0" width="360" height="190" rx="30" fill="#f2e7ff"/>
+    <text x="42" y="55" class="label">Coordinator Agent</text>
+    <text x="42" y="91" class="small">统一调度与任务编排</text>
+    <text x="42" y="123" class="small">判断：问答 / 计划 / 练习 / 批改</text>
+    <text x="42" y="155" class="small">汇总各 Agent 中间结果</text>
+  </g>
+
+  <g transform="translate(1188,180)">
+    <rect class="node" x="0" y="0" width="270" height="150" rx="26" fill="#dff7ed"/>
+    <text x="32" y="50" class="label">最终输出</text>
+    <text x="32" y="86" class="small">学习计划 · 个性化讲解</text>
+    <text x="32" y="116" class="small">练习题 · 引用来源</text>
+  </g>
+
+  <g transform="translate(1500,200)">
+    <rect class="node" x="0" y="0" width="225" height="116" rx="24" fill="#ffe4d6"/>
+    <text x="26" y="47" class="label">前端展示</text>
+    <text x="26" y="82" class="small">Vue 学习工作台</text>
+  </g>
+
+  <path class="arrow" d="M322 280 C350 280, 356 280, 385 280"/>
+  <path class="arrow" d="M620 280 C665 280, 676 280, 720 280"/>
+  <path class="arrow" d="M1080 270 C1124 260, 1144 250, 1188 250"/>
+  <path class="arrow" d="M1458 258 C1480 258, 1485 258, 1500 258"/>
+
+  <g transform="translate(115,470)">
+    <rect class="node" x="0" y="0" width="275" height="155" rx="26" fill="#eaf7ff"/>
+    <text x="30" y="48" class="label">Memory Service</text>
+    <text x="30" y="84" class="small">学生画像</text>
+    <text x="30" y="114" class="small">错题 · 薄弱点 · 偏好</text>
+  </g>
+
+  <g transform="translate(470,455)">
+    <rect class="node" x="0" y="0" width="300" height="185" rx="28" fill="#fff0d9"/>
+    <text x="32" y="50" class="label">Context Builder</text>
+    <text x="32" y="88" class="small">学生记忆 + 当前任务</text>
+    <text x="32" y="119" class="small">课程片段 + 输出约束</text>
+    <text x="32" y="150" class="small">动态组装 Prompt</text>
+  </g>
+
+  <g transform="translate(1110,455)">
+    <rect class="node" x="0" y="0" width="305" height="185" rx="28" fill="#e8f6df"/>
+    <text x="32" y="50" class="label">RAG Service</text>
+    <text x="32" y="88" class="small">切分 · 向量化 · 召回</text>
+    <text x="32" y="119" class="small">重排 · 压缩 · 引用</text>
+    <text x="32" y="150" class="small">返回 evidence / sources</text>
+  </g>
+
+  <g transform="translate(1478,448)">
+    <rect class="node" x="0" y="0" width="245" height="200" rx="28" fill="#fff8e3"/>
+    <text x="30" y="48" class="label">课程资料库</text>
+    <text x="30" y="84" class="small">教材 16 章</text>
+    <text x="30" y="114" class="small">PDF / Markdown</text>
+    <text x="30" y="144" class="small">向量库</text>
+    <text x="30" y="174" class="small">网页资料</text>
+  </g>
+
+  <path class="arrow dash" d="M800 360 C670 390, 540 420, 390 525"/>
+  <path class="arrow dash" d="M885 376 C810 410, 760 438, 710 455"/>
+  <path class="arrow dash" d="M1010 375 C1070 405, 1110 423, 1188 455"/>
+  <path class="arrow" d="M1415 548 C1438 548, 1455 548, 1478 548"/>
+  <path class="arrow" d="M1478 582 C1450 582, 1435 582, 1415 582"/>
+
+  <g transform="translate(142,760)">
+    <rect class="node" x="0" y="0" width="230" height="142" rx="26" fill="#dff1ff"/>
+    <circle cx="34" cy="35" r="15" fill="#3d8fd1"/>
+    <text x="28" y="38" class="badge">1</text>
+    <text x="64" y="45" class="label">规划 Agent</text>
+    <text x="30" y="84" class="small">阶段路线</text>
+    <text x="30" y="114" class="small">今日任务</text>
+  </g>
+
+  <g transform="translate(425,760)">
+    <rect class="node" x="0" y="0" width="230" height="142" rx="26" fill="#e6f8e8"/>
+    <circle cx="34" cy="35" r="15" fill="#4ca56e"/>
+    <text x="28" y="38" class="badge">2</text>
+    <text x="64" y="45" class="label">检索 Agent</text>
+    <text x="30" y="84" class="small">生成 query</text>
+    <text x="30" y="114" class="small">调用 RAG 工具</text>
+  </g>
+
+  <g transform="translate(708,760)">
+    <rect class="node" x="0" y="0" width="230" height="142" rx="26" fill="#f1e8ff"/>
+    <circle cx="34" cy="35" r="15" fill="#8e67d1"/>
+    <text x="28" y="38" class="badge">3</text>
+    <text x="64" y="45" class="label">讲解 Agent</text>
+    <text x="30" y="84" class="small">个性化解释</text>
+    <text x="30" y="114" class="small">结合引用来源</text>
+  </g>
+
+  <g transform="translate(991,760)">
+    <rect class="node" x="0" y="0" width="230" height="142" rx="26" fill="#fff1d8"/>
+    <circle cx="34" cy="35" r="15" fill="#e49a2f"/>
+    <text x="28" y="38" class="badge">4</text>
+    <text x="64" y="45" class="label">出题 Agent</text>
+    <text x="30" y="84" class="small">生成练习</text>
+    <text x="30" y="114" class="small">生成 rubric</text>
+  </g>
+
+  <g transform="translate(1274,760)">
+    <rect class="node" x="0" y="0" width="230" height="142" rx="26" fill="#ffe3da"/>
+    <circle cx="34" cy="35" r="15" fill="#db6c4e"/>
+    <text x="28" y="38" class="badge">5</text>
+    <text x="64" y="45" class="label">批改 Agent</text>
+    <text x="30" y="84" class="small">评分反馈</text>
+    <text x="30" y="114" class="small">定位错误原因</text>
+  </g>
+
+  <g transform="translate(1485,955)">
+    <rect class="node" x="0" y="0" width="230" height="142" rx="26" fill="#e3f7f0"/>
+    <circle cx="34" cy="35" r="15" fill="#39a98c"/>
+    <text x="28" y="38" class="badge">6</text>
+    <text x="64" y="45" class="label">反思 Agent</text>
+    <text x="30" y="84" class="small">总结掌握度</text>
+    <text x="30" y="114" class="small">更新下一步建议</text>
+  </g>
+
+  <path class="arrow" d="M900 375 C820 520, 710 635, 265 760"/>
+  <path class="arrow" d="M900 375 C780 545, 690 640, 540 760"/>
+  <path class="arrow" d="M900 375 C865 530, 835 620, 823 760"/>
+  <path class="arrow" d="M900 375 C960 535, 1030 660, 1106 760"/>
+  <path class="arrow" d="M940 375 C1050 530, 1215 642, 1390 760"/>
+  <path class="arrow" d="M1485 1000 C1340 965, 1280 920, 1220 875"/>
+
+  <path class="arrow" d="M372 831 C398 831, 404 831, 425 831"/>
+  <path class="arrow" d="M655 831 C680 831, 686 831, 708 831"/>
+  <path class="arrow" d="M938 831 C960 831, 968 831, 991 831"/>
+  <path class="arrow" d="M1221 831 C1245 831, 1252 831, 1274 831"/>
+  <path class="arrow" d="M1504 835 C1576 858, 1620 895, 1598 955"/>
+
+  <g transform="translate(150,1015)">
+    <rect class="node" x="0" y="0" width="460" height="135" rx="28" fill="#f3f8ff"/>
+    <text x="30" y="46" class="label">工具层</text>
+    <text x="30" y="82" class="small">SearchTool · KnowledgeRetrievalTool · FileParser</text>
+    <text x="30" y="112" class="small">CodeRunner · ScoringTool · MemoryTool</text>
+  </g>
+
+  <g transform="translate(730,1015)">
+    <rect class="node" x="0" y="0" width="510" height="135" rx="28" fill="#fff7f0"/>
+    <text x="32" y="46" class="label">学习闭环</text>
+    <text x="32" y="82" class="small">教：讲解知识 · 练：生成任务 · 评：批改评分</text>
+    <text x="32" y="112" class="small">改：更新画像、错题、薄弱点、下一步计划</text>
+  </g>
+
+  <path class="arrow dash" d="M520 902 C455 955, 410 980, 380 1015"/>
+  <path class="arrow dash" d="M1105 902 C1080 956, 1040 984, 990 1015"/>
+  <path class="arrow dash" d="M1595 1097 C1260 1180, 700 1180, 255 902"/>
+  <path class="arrow dash" d="M1540 1098 C1240 1160, 630 1120, 300 625"/>
+
+  <g transform="translate(1290,1080)">
+    <path class="sketch" d="M0 44 C46 10, 100 5, 146 38 C116 62, 50 72, 0 44 Z" fill="#ffffff" opacity="0.72"/>
+    <text x="20" y="48" class="tiny">记忆反哺下一轮学习</text>
+  </g>
+</svg>
+</body>
+</html>

@@ -1,0 +1,112 @@
+{
+  "exercise_set_id": "set_stu_002_001",
+  "student_id": "stu_002",
+  "exercises": [
+    {
+      "exercise_id": "exercise_001",
+      "exercise_type": "choice",
+      "difficulty": "medium",
+      "knowledge_points": [
+        "一次函数定义",
+        "k 和 b 的几何意义"
+      ],
+      "question": "已知一次函数 y = -2x + 3，下列关于该函数图象的说法正确的是？",
+      "options": [
+        "A. 图象经过第一、三象限",
+        "B. y 随 x 的增大而增大",
+        "C. 图象与 y 轴交于点 (0, 3)",
+        "D. 图象与 x 轴交于点 (3, 0)"
+      ],
+      "reference_answer": "C",
+      "hint": "回顾一次函数 y = kx + b 中 k 和 b 的几何意义，b 表示直线与 y 轴交点的纵坐标。",
+      "rubric": [
+        "正确识别 b 值为 y 轴截距得 1 分",
+        "正确判断 k 值符号对图象走向的影响得 1 分"
+      ],
+      "source_ids": [
+        "doc001_chunk0004"
+      ],
+      "created_at": "2026-06-01T15:24:01",
+      "metadata": {
+        "generated_by": "ExerciseAgent",
+        "model": "qwen3.5-plus"
+      }
+    },
+    {
+      "exercise_id": "exercise_002",
+      "exercise_type": "choice",
+      "difficulty": "medium",
+      "knowledge_points": [
+        "一次函数性质",
+        "k 的符号判断"
+      ],
+      "question": "若一次函数 y = kx + 1 的图象从左到右上升，则 k 的取值范围是？",
+      "options": [
+        "A. k > 0",
+        "B. k < 0",
+        "C. k = 0",
+        "D. k ≠ 0"
+      ],
+      "reference_answer": "A",
+      "hint": "图象从左到右上升对应 k 的什么符号？参考 k > 0 时函数图像上升的性质。",
+      "rubric": [
+        "理解图象上升意味着 k > 0 得 1 分",
+        "排除 k <= 0 的错误选项得 1 分"
+      ],
+      "source_ids": [
+        "doc001_chunk0004"
+      ],
+      "created_at": "2026-06-01T15:24:01",
+      "metadata": {
+        "generated_by": "ExerciseAgent",
+        "model": "qwen3.5-plus"
+      }
+    },
+    {
+      "exercise_id": "exercise_003",
+      "exercise_type": "choice",
+      "difficulty": "medium",
+      "knowledge_points": [
+        "一次函数增减性",
+        "函数值比较"
+      ],
+      "question": "已知点 A(1, y1) 和点 B(2, y2) 都在一次函数 y = -x + 5 的图象上，则 y1 与 y2 的大小关系是？",
+      "options": [
+        "A. y1 > y2",
+        "B. y1 < y2",
+        "C. y1 = y2",
+        "D. 无法确定"
+      ],
+      "reference_answer": "A",
+      "hint": "当 k < 0 时，y 随 x 的增大如何变化？比较 x 的大小即可推导 y 的大小。",
+      "rubric": [
+        "掌握一次函数增减性性质得 1 分",
+        "根据 x 的大小关系推导 y 的大小关系得 1 分"
+      ],
+      "source_ids": [
+        "doc001_chunk0009"
+      ],
+      "created_at": "2026-06-01T15:24:01",
+      "metadata": {
+        "generated_by": "ExerciseAgent",
+        "model": "qwen3.5-plus"
+      }
+    }
+  ],
+  "summary": "本组练习围绕一次函数主题，共 3 题，涵盖 k 与 b 的几何意义及函数性质。",
+  "debug": {
+    "mode": "llm",
+    "model": "qwen3.5-plus",
+    "source_count": 5,
+    "has_memory_context": true,
+    "raw_exercise_count": 3,
+    "student_id": "stu_002",
+    "course_name": "初中数学",
+    "topic": "一次函数",
+    "question": null,
+    "search_query": "初中数学 一次函数",
+    "retrieved_source_count": 5,
+    "memory_count": 0,
+    "elapsed_ms": 74567.09
+  }
+}

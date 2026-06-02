@@ -1,0 +1,288 @@
+{
+  "plan_id": "plan_stu_001_001",
+  "student_id": "stu_001",
+  "course_name": "初中数学",
+  "learning_goal": "两周内掌握不等式和一次函数",
+  "available_days": 14,
+  "daily_minutes": 40,
+  "stages": [
+    {
+      "stage_id": "stage_001",
+      "title": "不等式基础与计算稳定性强化",
+      "objective": "巩固数轴概念，掌握不等式基本性质，消除移项合并同类项的计算错误",
+      "start_day": 1,
+      "end_day": 5,
+      "knowledge_points": [
+        "数轴",
+        "有理数",
+        "不等式",
+        "移项合并同类项",
+        "负数除法变号规则"
+      ],
+      "tasks": [
+        {
+          "task_id": "task_001",
+          "task_type": "reading",
+          "title": "复习数轴与有理数大小比较",
+          "description": "阅读数轴相关定义，理解右边数总比左边大，复习绝对值几何意义，为理解不等号变号做准备",
+          "estimated_minutes": 40,
+          "knowledge_points": [
+            "数轴",
+            "有理数",
+            "绝对值"
+          ],
+          "completion_criteria": "能准确画出数轴并表示 -3 和 2 的大小关系",
+          "source_ids": [
+            "doc001_chunk0001"
+          ],
+          "status": "pending",
+          "metadata": {}
+        },
+        {
+          "task_id": "task_002",
+          "task_type": "explanation",
+          "title": "理解负数变号原理与标准步骤",
+          "description": "学习为什么除以负数要变号，重点记忆解不等式标准流程：去分母、去括号、移项、合并同类项、系数化为 1",
+          "estimated_minutes": 40,
+          "knowledge_points": [
+            "不等式",
+            "负数除法变号规则"
+          ],
+          "completion_criteria": "能口述变号原因并举例说明",
+          "source_ids": [
+            "doc001_chunk0003",
+            "doc001_chunk0009"
+          ],
+          "status": "pending",
+          "metadata": {}
+        },
+        {
+          "task_id": "task_003",
+          "task_type": "exercise",
+          "title": "移项与合并同类项专项训练",
+          "description": "完成 10 道含移项步骤的不等式计算题，强制要求每一步都写出移项后的中间状态，禁止跳步",
+          "estimated_minutes": 80,
+          "knowledge_points": [
+            "移项合并同类项",
+            "不等式",
+            "一元一次方程"
+          ],
+          "completion_criteria": "连续 10 题计算过程无移项错误",
+          "source_ids": [
+            "doc001_chunk0003"
+          ],
+          "status": "pending",
+          "metadata": {}
+        },
+        {
+          "task_id": "task_004",
+          "task_type": "review",
+          "title": "错题复盘与易错点总结",
+          "description": "整理前几日练习中的计算错误，区分是符号错误还是数值错误，总结个人易错清单",
+          "estimated_minutes": 40,
+          "knowledge_points": [
+            "不等式",
+            "有理数"
+          ],
+          "completion_criteria": "产出一份包含 3 个个人易错点的总结笔记",
+          "source_ids": [
+            "doc001_chunk0008"
+          ],
+          "status": "pending",
+          "metadata": {}
+        }
+      ],
+      "checkpoint": {
+        "checkpoint_id": "checkpoint_001",
+        "title": "不等式计算准确性测试",
+        "description": "完成 5 道一元一次不等式求解题，包含至少 2 道需要变号的题目",
+        "pass_criteria": "5 道题全部计算正确且步骤规范，无跳步现象",
+        "result_summary": null,
+        "passed": null
+      }
+    },
+    {
+      "stage_id": "stage_002",
+      "title": "不等式组与应用",
+      "objective": "掌握不等式组解法口诀，能借助数轴求公共解集",
+      "start_day": 6,
+      "end_day": 9,
+      "knowledge_points": [
+        "不等式组",
+        "数轴",
+        "公共解集"
+      ],
+      "tasks": [
+        {
+          "task_id": "task_005",
+          "task_type": "explanation",
+          "title": "学习不等式组解集口诀",
+          "description": "学习同大取大、同小取小等口诀，结合数轴理解公共部分的含义",
+          "estimated_minutes": 40,
+          "knowledge_points": [
+            "不等式组",
+            "数轴"
+          ],
+          "completion_criteria": "能解释口诀含义并在数轴上画出公共部分",
+          "source_ids": [
+            "doc001_chunk0003"
+          ],
+          "status": "pending",
+          "metadata": {}
+        },
+        {
+          "task_id": "task_006",
+          "task_type": "exercise",
+          "title": "不等式组求解专项练习",
+          "description": "完成 8 道不等式组题目，每题必须画出数轴辅助求解，标注公共区域",
+          "estimated_minutes": 80,
+          "knowledge_points": [
+            "不等式组",
+            "数轴"
+          ],
+          "completion_criteria": "8 道题解集正确，数轴表示规范",
+          "source_ids": [
+            "doc001_chunk0003"
+          ],
+          "status": "pending",
+          "metadata": {}
+        },
+        {
+          "task_id": "task_007",
+          "task_type": "quiz",
+          "title": "阶段综合小测",
+          "description": "混合测试不等式单解与不等式组求解，限时完成",
+          "estimated_minutes": 40,
+          "knowledge_points": [
+            "不等式",
+            "不等式组"
+          ],
+          "completion_criteria": "正确率达到 80% 以上",
+          "source_ids": [
+            "doc001_chunk0003"
+          ],
+          "status": "pending",
+          "metadata": {}
+        }
+      ],
+      "checkpoint": {
+        "checkpoint_id": "checkpoint_002",
+        "title": "不等式组数轴表示检查",
+        "description": "随机抽取 3 道不等式组题目，要求画出数轴并写出解集",
+        "pass_criteria": "数轴空心实心点正确，公共部分标注清晰，解集无误",
+        "result_summary": null,
+        "passed": null
+      }
+    },
+    {
+      "stage_id": "stage_003",
+      "title": "一次函数入门与综合",
+      "objective": "理解一次函数定义及 k/b 几何意义，建立函数与不等式的联系",
+      "start_day": 10,
+      "end_day": 14,
+      "knowledge_points": [
+        "一次函数",
+        "函数图像",
+        "不等式与函数关系"
+      ],
+      "tasks": [
+        {
+          "task_id": "task_008",
+          "task_type": "reading",
+          "title": "一次函数定义与参数意义",
+          "description": "学习 y=kx+b 形式，理解 k 决定增减性，b 决定与 y 轴交点",
+          "estimated_minutes": 40,
+          "knowledge_points": [
+            "一次函数"
+          ],
+          "completion_criteria": "能说出 k>0 和 k<0 时图像的变化趋势",
+          "source_ids": [
+            "doc001_chunk0004"
+          ],
+          "status": "pending",
+          "metadata": {}
+        },
+        {
+          "task_id": "task_009",
+          "task_type": "explanation",
+          "title": "函数图像绘制与性质",
+          "description": "学习两点法画直线，理解图像上的点与方程解的对应关系",
+          "estimated_minutes": 40,
+          "knowledge_points": [
+            "一次函数",
+            "函数图像"
+          ],
+          "completion_criteria": "能独立画出 y=2x+1 的图像并标注关键点",
+          "source_ids": [
+            "doc001_chunk0004"
+          ],
+          "status": "pending",
+          "metadata": {}
+        },
+        {
+          "task_id": "task_010",
+          "task_type": "exercise",
+          "title": "函数与不等式综合练习",
+          "description": "练习根据函数图像解不等式 kx+b>0，结合图像理解解集范围",
+          "estimated_minutes": 80,
+          "knowledge_points": [
+            "一次函数",
+            "不等式",
+            "不等式与函数关系"
+          ],
+          "completion_criteria": "能准确从图像读出不等式解集",
+          "source_ids": [
+            "doc001_chunk0004",
+            "doc001_chunk0003"
+          ],
+          "status": "pending",
+          "metadata": {}
+        },
+        {
+          "task_id": "task_011",
+          "task_type": "quiz",
+          "title": "两周学习目标终测",
+          "description": "综合测试不等式计算、不等式组及一次函数基础",
+          "estimated_minutes": 40,
+          "knowledge_points": [
+            "不等式",
+            "不等式组",
+            "一次函数"
+          ],
+          "completion_criteria": "总分达到 85 分以上，计算步骤规范",
+          "source_ids": [
+            "doc001_chunk0003",
+            "doc001_chunk0004"
+          ],
+          "status": "pending",
+          "metadata": {}
+        }
+      ],
+      "checkpoint": {
+        "checkpoint_id": "checkpoint_003",
+        "title": "函数与不等式综合应用验收",
+        "description": "给定一次函数图像，求解相关不等式并解释 k/b 意义",
+        "pass_criteria": "图像解读正确，不等式解集正确，参数意义解释清晰",
+        "result_summary": null,
+        "passed": null
+      }
+    }
+  ],
+  "overall_suggestions": [
+    "解题时强制要求写出标准移项步骤，避免跳步导致符号错误",
+    "遇到负数系数化为 1 时，先在草稿纸上画出数轴辅助理解方向变化",
+    "每次练习后花 5 分钟复盘计算错误，区分是概念错误还是运算失误"
+  ],
+  "status": "draft",
+  "created_at": "2026-06-02T11:00:04",
+  "updated_at": "2026-06-02T11:00:04",
+  "debug": {
+    "mode": "llm",
+    "model": "qwen3.5-plus",
+    "source_count": 5,
+    "search_query": "初中数学 两周内掌握不等式和一次函数 不等式",
+    "retrieved_source_count": 5,
+    "memory_count": 10,
+    "elapsed_ms": 87805.69
+  }
+}

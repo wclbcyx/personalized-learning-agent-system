@@ -1,0 +1,9 @@
+{
+  "student_id": "stu_001",
+  "course": "大模型智能体开发",
+  "goal": "4周内掌握 HelloAgents，并完成一个多智能体课程项目",
+  "current_level": "了解 Python 和基础 LLM 调用，但不熟悉 RAG、记忆和多智能体协作",
+  "available_time_per_day": "1.5小时",
+  "preferred_style": "先讲原理，再给代码框架，最后做小练习",
+  "current_question": "我想先学习 Agent 的工具调用和 RAG，应该怎么开始？"
+}
